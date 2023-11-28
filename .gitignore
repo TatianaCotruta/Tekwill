@@ -1,0 +1,7 @@
+#fisiere care nu trebuie sa fie in git
+.env
+#DS_Store -macos
+.DS_Store
+
+#folderele care nu trebuie sa fie in git
+node_modules/
