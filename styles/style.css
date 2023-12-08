@@ -1,0 +1,31 @@
+.btn {
+    color: white;
+    background-color: blue;
+}
+
+#page-title {
+    color: aquamarine;
+    background-color: beige;
+}
+
+p {
+    font-size: 16px;
+}
+
+a:hover {
+    color: crimson;
+}
+a::before {
+    content: "★";
+}
+
+h3::after {
+    content: " ";
+    display: block;
+    border-bottom: 2px solid black;
+}
+
+h1 {
+    background-color: rgba(255, 0, 200, 1);
+}
+    
