@@ -1,0 +1,158 @@
+body {
+    margin: 0;
+    font-family: 'Montserrat';
+}
+
+.wrapper-outer {
+    background-image: url('./img-svg/background-photo.png');
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    box-shadow: inset 0 0 0 1000px rgba(0,0,0,0.4);
+}
+
+.wrapper-inner {
+    width: 1200px;
+    margin: 0 auto;
+   }
+
+   
+header {
+    display: flex;
+    justify-content: space-between;
+    height: 104px;
+    align-items: center;
+   }
+   
+h2 {
+    color: #FFFFFF;
+    font-size: 24px;
+    letter-spacing: 0.1px;
+    font-style: bold;
+}   
+.nav-main .nav-item {
+    font-size: 16px;
+    font-weight: 600;
+    color: #FFFFFF;
+    letter-spacing: 0.2px;
+    text-decoration: none;
+}
+   
+.nav-main {
+    color: #FFFFFF;
+    font-size: 14px;
+    display: flex;
+    gap: 24px;
+
+}
+
+section#home-screen {
+    display: flex;
+    justify-content: space-between;
+    color: #FFFFFF;
+    margin-top: 50px;
+    letter-spacing: 0.2px;
+}
+    
+.title-container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+}
+
+h1 {
+    font-size: 58px;
+}
+
+h4 {
+    font-size: 20px;
+}
+
+.title-btn {
+    display: flex;
+    width: 388px;
+    justify-content: space-between;
+}
+
+.action-btn {
+    font-size: 14px;
+    width: 185px;
+    height: 48px;
+    background-color: #FFA62B;
+    border-radius: 37px;
+    border-color: transparent;
+    color: #FFFFFF;
+}
+
+.learn-more-btn {
+    font-size: 14px;
+    width: 185px;
+    height: 48px;
+    background-color: transparent;
+    border-radius: 37px;
+    border: 1px solid white;
+    color: #FFFFFF;
+}
+   
+.registration {
+    display: flex;
+    width: 248px;
+    padding: 41px;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    border-radius: 20px;
+    background: #FFFFFF;
+    margin-bottom: 50px;
+}
+   
+.registration .appointment-form {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+   
+.submit-appointment {
+    margin-top: 40px;
+    padding: 15px 40px;
+    border-radius: 5px;
+    background:  #FFA62B;
+    border: 0;
+    color: #FFFFFF;
+}
+   
+h3 {
+    font-size: 24px;
+    color: black;
+}
+
+form input {
+    height: 50px;
+    padding-left: 21px;
+    background-color: #F9F9F9;
+    border: 1px solid #BDBDBD;
+    border-radius: 5px;
+    font-size: 14px;
+    outline: none;
+}
+
+#select {
+    width: 248px;
+    height: 50px;
+    padding-left: 21px;
+    background-color: #F9F9F9;
+    border: 1px solid #BDBDBD;
+    border-radius: 5px;
+    font-size: 14px;
+    color: #747272;
+    outline: none;
+}
+
+label {
+    font-size: 14px;
+    color:#252B42;
+    font-weight: 600;
+    line-height: 1.7em;
+
+}
