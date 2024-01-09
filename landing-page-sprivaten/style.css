@@ -13,6 +13,7 @@
 
 
 body {
+    font-family: Montserrat, Arial, Helvetica, sans-serif;
     margin: 0;
 }
 
@@ -30,7 +31,6 @@ header {
     justify-content: space-between;
     height: 104px;
     align-items: center;
-    padding: 0 100px;
 }
    
 header h2 {
@@ -55,13 +55,15 @@ header h2 {
 }
 
 section#home-screen {
+    width: 100%;
     display: flex;
     justify-content: space-between;
     color: var(--light-text-color);
-    padding: 50px 100px;
+    padding: 50px 0;
 }
     
 .title-container {
+    width: 500px;
     display: flex;
     flex-direction: column;
 }
@@ -99,7 +101,7 @@ section#home-screen {
 }
    
 .registration {
-    width: 248px;
+    width: 250px;
     display: flex;
     padding: 40px;
     flex-direction: column;
@@ -634,119 +636,44 @@ hr {
     color: var(--muted-color);
 }
 
-.copyright {
+#copyright {
     background-color: #16697A;
-    display: flex;
-    align-self: stretch;
-    padding: 25px 100px;
-
 }
 
-.copyright h6 {
+#copyright h6 {
     color: #ffffff;
     font-size: 14px;
     line-height: 24px;
     letter-spacing: 0.2px;
     margin: 0;
+    padding: 25px 0;
 }
 
 .content-wrapper {
     margin: 0 auto;
-    width: 100%;
+    width: 1200px;
 }
 
-@media (max-width: 480px) {
-    section#footer-nav .footer-logo {
-        gap: 50px;
-        padding: 40px 37px 20px;
-        flex-direction: column;
-        align-items: start;
-    }
-}
-
-@media (max-width: 970px) {
-    .choose-us-container {
-        flex-direction: column;
-    }
-
-    .description-2 {
-        flex-direction: column;
-    }
-    .description-3 {
-        flex-direction: column;
-    }
-    .contact-container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .contact-container h5, h2 {
-        align-items: left;
-    }
-
-    .contact-form {
-        width: 60%;
-        grid-template-columns: repeat(1, 100%);
-        grid-template-rows: repeat(6, 40px);
-    }
-
-    .contact-form input:last-child {
-        grid-area: 5/1/7/2;
-    }
-
-    section#footer-nav .footer-nav {
-        flex-direction: column;
-        align-items: start;
-        gap: 30px;
-    }
-    
-    hr {
-        width: 75%;
-    }
-
-    .copyright {
-        justify-content: center;
-    }
-}
-    
-
-
-@media (max-width: 1000px) {
-    .nav-main .nav-item {
-        display: none;
-    }
-
+@media (max-width:850px) {
     section#home-screen {
-    flex-direction: column;
-    align-items: center;
-    padding: 50px 30px;
-    gap: 80px;
-     }
-        
+        flex-direction: column;
+    }
     .title-container {
-    text-align: center;
-    gap: 35px;
+        width: 100%;
     }
-    .title-container h1 {
-    padding-top: 0;
-    }
-        
     .registration {
-    width: 30%;
-    }
-
-    .footer-form input {
-        padding: 15px 0px 15px 10px;
-        width: 50%;
-    }
-    
-
-}
-
-@media (min-width: 1000px) {
-    .text-appointment {
-        text-align: center;
+        width: 100%;
     }
 }
+@media (max-width: 1300px) {
+    .content-wrapper {
+        width: calc(100% - 100px);
+    }
+}
+
+
+
+
+
+
 
