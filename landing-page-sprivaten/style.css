@@ -66,12 +66,17 @@ section#home-screen {
     width: 500px;
     display: flex;
     flex-direction: column;
+    gap: 35px;
 }
 
 .title-container h1 {
     font-size: 58px;
     margin: 0;
     padding-top: 50px;
+}
+
+.title-container h4 {
+    margin: 0;
 }
 
 .button-container {
@@ -654,17 +659,49 @@ hr {
     width: 1200px;
 }
 
+@media (max-width: 768px) {
+    .title-container .button-container {
+        flex-direction: column;
+    }
+
+    .title-container h1 {
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 800px) {
+    .nav-main .nav-item {
+        display: none;
+    }
+}
+
 @media (max-width:850px) {
+    .description-3 {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 1024px) {
     section#home-screen {
         flex-direction: column;
+        gap: 80px;
+        align-items: center;
     }
     .title-container {
         width: 100%;
+        align-items: center;
+        text-align: center;
     }
+
+    .button-container {
+        gap: 25px;
+    }
+
     .registration {
-        width: 100%;
+        align-items: center;
     }
 }
+
 @media (max-width: 1300px) {
     .content-wrapper {
         width: calc(100% - 100px);
