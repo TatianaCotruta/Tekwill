@@ -292,8 +292,8 @@ video {
 }
 
 .play-btn {
-    width: 30%;
-    height: 30%;
+    width: 20%;
+    height: 20%;
     background-color: transparent;
     border: none;
     position: absolute;
@@ -715,92 +715,26 @@ hr {
     width: 1200px;
 }
 
- 
-@media (max-width: 768px) {
-    .title-container .button-container {
-        flex-direction: column;
+
+@media (max-width: 1300px) {
+    .content-wrapper {
+        width: calc(100% - 100px);
     }
 
-    .contact-container {
-        align-items: center;
+    .registration {
+        width: 250px;
     }
 
-    .contact-container h5 {
-        text-align: center;
-    }
+    video {
+        width: 100%;
+    }  
+} 
 
-    .contact-form {
-        justify-content: center;
-        grid-template-columns: repeat(1, 50%);
-        grid-template-rows: repeat(7, 40px);
-    }
-
-    .contact-form input:last-child {
-        grid-area: 5/1/8/2;
-    }
-
-    .contact-us-container {
-        flex-direction: column;
-        gap: 50px;
+@media (max-width: 1150px) {
+    .card-item {
+        padding: 15px;
     }
 }
-
-@media (max-width: 580px) {
-    .card-content-4 {
-        text-align: center;
-        align-items: center;
-    }
-}
-
-@media (max-width: 800px) {
-    .nav-main .nav-item {
-        display: none;
-    }
-}
-
-@media (max-width:850px) {
-    .description-3 {
-        flex-direction: column;
-    }
-}
-
-@media (max-width: 400px) {
-    .card-item-2 {
-        width: 87%;
-        padding: 12px 17px;
-    } 
-
-    .footer-logo {
-        flex-direction: column;
-        align-items: start;
-    }
-    
-    .nav-bar-item {
-        justify-content: start;
-    }
-}
-
-@media (max-width: 480px) {
-    .contact-form {
-        grid-template-columns: repeat(1, 100%);
-        grid-template-rows: repeat(7, 40px);
-    }
-}
-
- @media (max-width: 392px) {
-    .contact-container h2 {
-        font-size: 38px;
-    } 
-
-    .footer-form input {
-        width: 103px;
-        padding: 10px;
-    }
-    
-    .subscribe-btn {
-        padding: 0 10px;
-    }
- }
 
 @media (min-width: 1024px) {
     .contact-container {
@@ -828,9 +762,22 @@ hr {
         gap: 25px;
     }
     
+    .registration {
+        width: 45%;
+    }
+
+    .choose-us-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
     .description-2 {
         flex-direction: column;
         align-items: center;
+    }
+
+    .description-3 {
+        flex-direction: column;
     }
 
     .footer-nav {
@@ -839,26 +786,48 @@ hr {
     }
 }
 
-@media (max-width: 1300px) {
-    .content-wrapper {
-        width: calc(100% - 100px);
+@media (max-width: 800px) {
+    .nav-main .nav-item {
+        display: none;
     }
+}
 
-    .registration {
-        width: 250px;
-    }
-
-    video {
-        width: 100%;
+@media (max-width: 768px) {
+    .title-container .button-container {
+        flex-direction: column;
     }
     
+    .contact-container {
+        align-items: center;
+    }
+
+    .contact-container h5 {
+        text-align: center;
+    }
+
+    .contact-form {
+        justify-content: center;
+        grid-template-columns: repeat(1, 50%);
+        grid-template-rows: repeat(7, 40px);
+    }
+
+    .contact-form input:last-child {
+        grid-area: 5/1/8/2;
+    }
+
+    .contact-us-container {
+        flex-direction: column;
+        gap: 50px;
+    }
+}
+
+@media (max-width: 680px) {
+    .registration {
+        width: 65%;
+    }
 }
 
 @media (max-width: 480px) {
-    .registration {
-        width: 190px;
-        padding: 20px;
-    }
      .text-appointment {
         text-align: center;
      }
@@ -866,6 +835,12 @@ hr {
     .submit-appointment {
         line-height: 15px;
     }
+
+    .contact-form {
+        grid-template-columns: repeat(1, 100%);
+        grid-template-rows: repeat(7, 40px);
+    }
+
     .footer-nav {
         width: 100%;
     }
@@ -873,20 +848,51 @@ hr {
     #copyright h6 {
         text-align: center;
     }
-
 }
+
 @media (max-width: 427px) {
     .choose-us-container {
         width: 100%;
     }
 }
 
-@media (max-width: 1150px) {
-    .card-item {
-        padding: 15px;
+@media (max-width: 400px) {
+    .card-item-2 {
+        width: 87%;
+        padding: 12px 17px;
+    } 
+
+    .footer-logo {
+        flex-direction: column;
+        align-items: start;
+    }
+    
+    .nav-bar-item {
+        justify-content: start;
     }
 }
 
+@media (max-width: 580px) {
+    .card-content-4 {
+        text-align: center;
+        align-items: center;
+    }
+}
+
+@media (max-width: 392px) {
+    .contact-container h2 {
+        font-size: 38px;
+    } 
+
+    .footer-form input {
+        width: 103px;
+        padding: 10px;
+    }
+    
+    .subscribe-btn {
+        padding: 0 10px;
+    }
+}
 
 
 
