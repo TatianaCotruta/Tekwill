@@ -27,3 +27,21 @@
 //  }
 
 // form.addEventListener('submit', handleSubmit);
+const loadLanguage = async (lang) => {
+    // fetch("languages.json")
+    // .then(res => res.json)
+    // .then(data => console.log)
+    const response = await fetch("languages.json");
+    const data = await response.json();
+    console.log(data[lang])
+    return data[lang]; 
+}
+
+const switchLanguage = (lang) =>{
+    // ternary operator
+    //const selectedLanguage = 'english' ? 'english' : 'romanian'
+    loadLanguage(lang)
+    // .then(langData => updateContent(langData))
+}
+
+switchLanguage('english');
