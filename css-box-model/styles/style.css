@@ -1,0 +1,67 @@
+.btn {
+    color: white;
+    background-color: blue;
+}
+
+#page-title {
+    color: aquamarine;
+    background-color: beige;
+    display: inline;
+}
+
+p {
+    font-size: 16px;
+}
+
+a {
+    text-decoration: none;
+    color:#000000
+}
+a:hover {
+    color: crimson;
+    text-decoration: underline;
+}
+
+.dev::before {
+    content: "★";
+}
+
+
+h3::after {
+    content: " ";
+    display: block;
+    border-bottom: 2px solid black;
+    width: 300px;
+}
+
+h1 {
+    background-color: rgba(255, 0, 200, 1);
+}
+
+.nav  {
+    display: inline;
+}
+
+nav a {
+    text-decoration: none;
+    padding: 0 25px;
+    font-size: 16px;
+    color: #a2a3a3;
+}
+
+.post-img {
+    width: 100%;
+    height: auto;
+}
+.author {
+    padding: 10px;
+    margin: 20px;
+    background-color: rgba(0, 128, 0, 0.5);
+    color: white;
+    width: 400px;
+}
+
+.title {
+    display: block;
+}
+
